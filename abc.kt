@@ -22,7 +22,7 @@ class b:a(){
 fun main(args: Array<String>){
     var a = mutableListOf<Int>()
     a.addAll(Array(10){-1})
-    for (i in 0 until(10))
+    for (i in 0 until(100))
         println("$i ${a[i]}")
 }
 
