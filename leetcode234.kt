@@ -24,7 +24,7 @@ class Solution {
                 return false
             x++;y--;
         }
-        return true
+        return false
     }
 }
 
