@@ -22,7 +22,7 @@ class Solution {
             a = head2; head2 = head2.next
         }
         var ans = a
-        while (head1 != null && head2 != null) {
+        while (head1 != null && head2 != nul) {
             if (head1.`val` <= head2.`val`) {
                 a?.next = head1
                 a = a?.next
