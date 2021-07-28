@@ -11,8 +11,13 @@ class Solution {
         val a = arrayOf("qwertyuiop", "asdfghjkl", "zxcvbnm")
         val ans = mutableListOf<String>()
         words.forEach {
-            if (check(it,a[0]) || check(it,a[1]) || check(it,a[2]))
+            if (check(it, a[0])) {
                 ans.add(it)
+            } else if (check(it, a[1])) {
+                ans.add(it)
+            } else if (check(it, a[2])) {
+                ans.add(it)
+            }
         }
         return ans.toTypedArray()
     }
