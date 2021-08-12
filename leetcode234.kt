@@ -22,7 +22,7 @@ class Solution {
         {
             if (a.elementAt(x)!= a.elementAt(y))
                 return false
-            x++;y--;
+            x++;y--
         }
         return true
     }
