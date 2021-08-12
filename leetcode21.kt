@@ -20,6 +20,7 @@ class Solution {
             a = head1; head1 = head1.next
         } else {
             a = head2; head2 = head2.next
+            
         }
         var ans = a
         while (head1 != null && head2 != null) {
