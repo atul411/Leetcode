@@ -18,7 +18,6 @@ class Solution {
             div = if (accMsb) div and (1.inv()) else div or 1
             if (accMsb) acc += dvr
         }
-
         return div.toInt() * if (sign) -1 else 1
     }
 }
