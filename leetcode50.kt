@@ -6,7 +6,6 @@ class Solution {
             if (n == 1)
                 return x
             if (n % 2 == 0) {
-
                 var a = myPow(x, n / 2)
                 return a*a
             }
