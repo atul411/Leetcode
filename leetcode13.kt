@@ -17,6 +17,5 @@ class Solution {
             last = value
         }
         return number
-
     }
 }
