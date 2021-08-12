@@ -18,7 +18,6 @@ class Solution {
         val temp = fromHead!!.`val`
         fromHead!!.`val` = fromTail!!.`val`
         fromTail!!.`val` = temp
-
         return head
     }
 }
