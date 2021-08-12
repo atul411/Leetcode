@@ -10,7 +10,6 @@
 class Solution {
     fun swapPairs(head: ListNode?): ListNode? {
         var (a,ans) = Pair(head,head)
-
         while (a != null)
         {
             if (a.next != null)
