@@ -6,8 +6,8 @@ class Solution
 public:
     int dominantIndex(vector<int> &nums)
     {
-        int largest = nums[0], secondlargest = nums[0];
-        int index = -1;
+        int largest = nums[0], secondlargest = INT_MIN;
+        int index = 0;
         for (int i = 1; i < nums.size(); i++)
         {
             if (nums[i] > largest)
@@ -19,13 +19,6 @@ public:
             else if (nums[i] > secondlargest)
             {
                 secondlargest = nums[i];
-            }
-            else
-            {
-                if (largest == secondlargest)
-                {
-                    secondlargest = nums[i];
-                }
             }
         }
         return largest >= 2 * secondlargest ? index : -1;
