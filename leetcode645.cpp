@@ -7,19 +7,27 @@ public:
     vector<int> findErrorNums(vector<int> &nums)
     {
         unordered_set<int> set;
-        vector<int> ans;
+        vector<int> ans, sol(2, 0);
         int n = nums.size();
-        long long sum = 0, totalSum = n * (n + 1) / 2;
-        for (int i = 0; i < nums.size(); i++)
+        vector<int> arr(n, 0);
+        for (int i = 0; i < n; i++)
         {
-            if (set.find(nums[i]) != set.end())
-            {
-                ans.push_back(nums[i]);
-                continue;
-            }
-            sum = sum + nums[i];
-            set.insert(nums[i]);
+            arr[nums[i] - 1]++;
         }
-        ans.push_back(totalSum - sum);
+        for (int i = 0; i < n; i++)
+        {
+            switch (arr[i])
+            {
+            case 2:
+                sol[0] = i + 1;
+                break;
+            case 0:
+                sol[1] = i + 1;
+                break;
+            default:
+                break;
+            }
+        }
+        return sol;
     }
 };
