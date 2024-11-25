@@ -1,0 +1,1 @@
+{"name":"Local: cf231A","url":"/Users/atuly/Desktop/DSA/leetcode/cf231A.cpp","tests":[{"id":1732074163123,"input":"3\n1 1 0\n1 1 1\n1 0 0","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/atuly/Desktop/DSA/leetcode/cf231A.cpp","group":"local","local":true}
