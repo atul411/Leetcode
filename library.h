@@ -114,12 +114,12 @@
 #include <unordered_map> 
 #include <unordered_set> 
 #endif 
-
-// #include<bits/stdc++.h>
 using namespace std;
+
+using ll = long long;
 using vi = vector<int>;
 using vvi = vector<vi>;
-using vvl = vector<vector<long long>>;
+using vvl = vector<vector<ll>>;
 
 string upper_case(string str) {
     for (auto &ch : str) {
