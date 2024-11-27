@@ -1,1 +1,0 @@
-{"name":"Local: cf282A","url":"/Users/atuly/Desktop/DSA/leetcode/cf282A.cpp","tests":[{"id":1732117474313,"input":"1\n++X","output":"1"},{"id":1732117487987,"input":"2\nX++\n--X","output":"0\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/atuly/Desktop/DSA/leetcode/cf282A.cpp","group":"local","local":true}
