@@ -143,21 +143,12 @@ bool equal_double(double a, double b) {
     return abs(a - b) <= 1e-3;
 }
 
+bool lambda(int a, int b) {
+    return a < b;
+}
 int main() {
-    int ans = 0, totalPolice = 0, n, temp;
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &temp);
-        if (temp > 0) {
-            totalPolice += temp;
-        } else {
-            totalPolice += temp;
-        }
-        if (totalPolice < 0) {
-            ans++;
-            totalPolice = 0;
-        }
-       
-    }
-    printf("%d", ans);
+    int red, blue;
+    scanf("%d %d", &red, &blue);
+    int mx = max(red, blue), mn = min(red, blue);
+    printf("%d %d", mn, (mx - mn) / 2);
 }

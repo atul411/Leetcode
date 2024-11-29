@@ -144,20 +144,14 @@ bool equal_double(double a, double b) {
 }
 
 int main() {
-    int ans = 0, totalPolice = 0, n, temp;
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &temp);
-        if (temp > 0) {
-            totalPolice += temp;
-        } else {
-            totalPolice += temp;
-        }
-        if (totalPolice < 0) {
-            ans++;
-            totalPolice = 0;
-        }
-       
+    int n, k, left, total = 240, ans = 0;
+    scanf("%d %d", &n, &k);
+    left = 240 - k;
+    int i = 1;
+    while (left - 5 * i >= 0 and i <= n) {
+        ans++;
+        left -= 5 * i;
+        i++;
     }
     printf("%d", ans);
 }

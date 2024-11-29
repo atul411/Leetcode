@@ -144,20 +144,20 @@ bool equal_double(double a, double b) {
 }
 
 int main() {
-    int ans = 0, totalPolice = 0, n, temp;
+    int ans = 0, best = -1, worst = -1, n, curr;
     scanf("%d", &n);
     for (int i = 0; i < n; i++) {
-        scanf("%d", &temp);
-        if (temp > 0) {
-            totalPolice += temp;
-        } else {
-            totalPolice += temp;
-        }
-        if (totalPolice < 0) {
+        scanf("%d", &curr);
+        if (best == -1 or worst == -1) {
+            best = curr;
+            worst = curr;
+        } else if (curr > best) {
             ans++;
-            totalPolice = 0;
+            best = curr;
+        } else if (curr < worst) {
+            ans++;
+            worst = curr;
         }
-       
     }
     printf("%d", ans);
 }
