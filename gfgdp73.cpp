@@ -1,11 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/**
- * if last ke match kar gaye
- * 1+ rest ya fir... 1
- *
- */
+
 
 int solution(string str1, string str2, int n, int m)
 {

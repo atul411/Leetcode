@@ -17,18 +17,18 @@ int solution(int n)
 int maxGameByWinner(int N)
 {
     int dp[N];
-    //return 0 if there is only 1 player
+    
     if (N == 1){
       return 0;
     }
      
-    // for 0 games, 1 player is needed
-    // for 1 game, 2 players are required
+    
+    
     dp[0] = 1;   
     dp[1] = 2;
      
-    // loop until i-th Fibonacci number is 
-    // less than or equal to N
+    
+    
     int i = 1;
     while (dp[i++] < N){
       dp[i] = dp[i - 1] + dp[i - 2];
@@ -37,10 +37,10 @@ int maxGameByWinner(int N)
       return (i - 1);
     }
  
-    // result is (i - 2) because i will be
-    // incremented one extra in while loop
-    // and we want the last value which is
-    // smaller than N, so one more decrement
+    
+    
+    
+    
     return (i - 2);
 }
 int main()

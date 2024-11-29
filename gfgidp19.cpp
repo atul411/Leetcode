@@ -30,10 +30,7 @@ void bfs(GraphLinkedListImplementation &parent, GraphLinkedListImplementation &t
             {
                 que.push(node);
             }
-            /**
-             * @brief marking visited true out of if block to make it safe.
-             *
-             */
+            
             visitd[node] = true;
         }
     }

@@ -4,10 +4,10 @@ using namespace std;
 int chordCnt(int A)
 {
 
-    // n = no of points required
+    
     int n = 2 * A;
 
-    // dp array containing the sum
+    
     int dpArray[n + 1];
     fill_n(dpArray, n + 1, 0);
     dpArray[0] = 1;
@@ -22,7 +22,7 @@ int chordCnt(int A)
         }
     }
 
-    // returning the required number
+    
     return dpArray[n];
 }
 

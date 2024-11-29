@@ -8,15 +8,15 @@ void isCyclic(GraphLinkedListImplementation graph, int src, vb visited, int &ans
         if (!visited[u])
         {
             isCyclic(graph, u, visited, ans);
-            // return true;
+            
         }
         else if (u != src)
         {
             ans++;
-            // return true;
+            
         }
     }
-    // return false;
+    
 }
 
 int main()

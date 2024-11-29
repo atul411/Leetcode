@@ -78,7 +78,7 @@ bool solutionUsingDp(vi arr, int n, int sum)
 
 int main()
 {
-    // cout << solution({1, 5, 11, 5}, 0, vi(0), vi(0)) << endl;
+    
     int sm = vectorSum(vi({1, 5, 11, 5})) / 2;
     solutionUsingDp({1, 5, 11, 5}, 4, sm);
 }

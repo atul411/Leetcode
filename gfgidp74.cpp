@@ -17,8 +17,8 @@ int countStrings(int n)
     int a = 1, b = 1;
     for (int i = 1; i < n; i++)
     {
-        // Here we have used the temp variable because we
-        // want to assign the older value of a to b
+        
+        
         int temp = a + b;
         b = a;
         a = temp;

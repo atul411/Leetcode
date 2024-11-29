@@ -8,14 +8,7 @@ public:
     {
     }
 
-    /**
-     * @brief check str2 is prefix of str1
-     *
-     * @param str1
-     * @param str2
-     * @return true
-     * @return false
-     */
+    
     bool isPrefix(string str1, string str2)
     {
         if (str1.length() < str2.length())
