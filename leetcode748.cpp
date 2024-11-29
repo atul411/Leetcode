@@ -11,7 +11,7 @@ public:
         {
             track_indices[words[i]] = i;
         }
-        // sort(words.begin(), words.end());
+        
         unordered_map<char, int> matching;
         for (int i = 0; i < licensePlate.size(); i++)
         {

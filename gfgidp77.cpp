@@ -4,10 +4,7 @@ int solutiin(int n, int k)
 {
     int dp[n + 1][k + 1];
     fill(dp[0][0], k + 1, n + 1, 0);
-    /**
-     * @brief s(n, k) = k*s(n-1, k) + s(n-1, k-1)
-     *
-     */
+    
     for (int i = 0; i <= n; i++)
     {
         dp[i][1] = 1;

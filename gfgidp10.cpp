@@ -8,14 +8,14 @@ void bfs(GraphLinkedListImplementation graph, int level, int start)
     visted[start] = true;
     while ((q1.size() or q2.size()) and level)
     {
-        // cout<<level<<"----> ";
+        
         if (q1.size())
         {
             while (!q1.empty())
             {
                 int temp = q1.front();
                 q1.pop();
-                // cout<<temp<<"\t";
+                
                 for (auto i : graph.arr[temp])
                 {
                     if (visted[i] == false)
@@ -32,7 +32,7 @@ void bfs(GraphLinkedListImplementation graph, int level, int start)
             {
                 int temp = q2.front();
                 q2.pop();
-                // cout<<temp<<"\t";
+                
                 for (auto i : graph.arr[temp])
                 {
                     if (visted[i] == false)

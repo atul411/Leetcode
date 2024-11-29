@@ -42,7 +42,7 @@ public:
         {
             visited[v] = true;
             recStack[v] = true;
-            // list<int>::iterator i;
+            
             for (auto i = umap[v].begin(); i != umap[v].end(); ++i)
             {
                 if (!visited[*i] && isCyclicUtil(*i, visited, recStack))

@@ -21,7 +21,7 @@ int solution(vector<int> arr, int x, int y)
     int ans = INT_MIN;
     for (auto num : dp)
     {
-        // cout << num << "\t";
+        
         ans = max(ans, num + arr[y]);
     }
     return ans;

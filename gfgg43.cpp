@@ -21,7 +21,7 @@ int solution(GraphLinkedListImplementation graph)
     {
         vb visited(graph.v, false);
         int k = dfs(graph, i, visited);
-        // cout << i << "\t" << k << endl;
+        
         ans = min(ans, k);
     }
     return ans + 1;

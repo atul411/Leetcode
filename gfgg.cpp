@@ -18,15 +18,15 @@ int solution(vi parent)
     {
         grpah.addEdge(parent[i], i);
     }
-    // for (auto i = 0; i < v; i++)
-    // {
-    //     cout<<i<<" --> ";
-    //     for (auto j : grpah.arr[i])
-    //     {
-    //         cout << j << " ";
-    //     }
-    //     cout << endl;
-    // }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return dfs(grpah, 0);
 }
 

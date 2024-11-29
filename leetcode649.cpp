@@ -11,19 +11,19 @@ public:
         {
             umap[ch]++;
         }
-        // if (umap['R'] > umap['D'])
-        // {
-        //     return "Radient";
-        // }
-        // if (umap['D'] > umap['R'])
-        // {
-        //     return "Dire";
-        // }
-        // if (senate[0] == 'R')
-        // {
-        //     return "Radient";
-        // }
-        // return "Dire";
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         for (int i = 0; i < senate.size(); i++)
         {
             if (senate[i] == 'R')

@@ -1,4 +1,3 @@
-
 #ifndef _GLIBCXX_NO_ASSERT
 #include <cassert>
 #endif
@@ -29,7 +28,7 @@
 #include <cwctype>
 #endif
 
-// C++
+
 #include <algorithm>
 #include <bitset>
 #include <complex>

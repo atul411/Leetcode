@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// a = 10, b = 8;
 
-// if a<=0 or b<= 0
-// return 0;
-// Area X (3, 2)
-// Area Y (-5, -10)
-// Area Z (-20, 5)
-// return max of choose X Y Z + 1
+
+
+
+
+
+
+
 
 int solution(int x, int y, int current, unordered_map<pair<int, int>, int> &mp)
 {

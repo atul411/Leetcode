@@ -3,7 +3,7 @@ using namespace std;
 
 int newMann(int n)
 {
-    // P(n) = P(P(n - 1)) + P(n - P(n - 1))
+    
     int dp[n + 1];
     dp[0] = 0;
     dp[1] = 1;
