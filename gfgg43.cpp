@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int dfs(GraphLinkedListImplementation graph, int src, vb &visited)
 {
     visited[src] = true;
@@ -13,7 +13,6 @@ int dfs(GraphLinkedListImplementation graph, int src, vb &visited)
     }
     return ans;
 }
-
 int solution(GraphLinkedListImplementation graph)
 {
     int ans = inf;
@@ -21,12 +20,10 @@ int solution(GraphLinkedListImplementation graph)
     {
         vb visited(graph.v, false);
         int k = dfs(graph, i, visited);
-        
         ans = min(ans, k);
     }
     return ans + 1;
 }
-
 vi solutionOptimized(GraphLinkedListImplementation graph)
 {
     vi degree(graph.v, 0);
@@ -65,7 +62,6 @@ vi solutionOptimized(GraphLinkedListImplementation graph)
     }
     return ans;
 }
-
 int main()
 {
     GraphLinkedListImplementation g(6);

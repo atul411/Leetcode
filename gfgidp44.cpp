@@ -1,4 +1,11 @@
 #include<bits/stdc++.h>
+using namespace std;
+
+using vi = vector<int>;
+
+void fill(int &a, int n, int m, int val) {
+    fill_n(a, n*m, val);
+}
 
 int solution(vi str1, vi str2, int x, int y, int last)
 {

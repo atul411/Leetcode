@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 void solution(vvl arr)
 {
     int n = arr.size();

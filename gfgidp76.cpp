@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(string str)
 {
     int n = str.length();
@@ -27,7 +27,6 @@ int solution(string str)
     }
     return dp[n];
 }
-
 int main()
 {
     cout<<solution("1234");

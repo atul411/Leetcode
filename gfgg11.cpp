@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool solution(vi arr)
 {
     int size = arr.size();
@@ -25,7 +25,6 @@ bool solution(vi arr)
     }
     return false;
 }
-
 int main()
 {
     string a = string();

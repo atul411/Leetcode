@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 unordered_map<int, int> umap;
 int f(int x)
 {
@@ -9,7 +9,6 @@ int f(int x)
         return umap[x];
     return f(x / 2) + x;
 }
-
 vi solution(vi arr)
 {
     int n = arr.size();
@@ -18,7 +17,6 @@ vi solution(vi arr)
     {
         if (umap.find(arr[i]) != umap.end())
         {
-
             temp[i] = umap[arr[i]];
         }
         else
@@ -29,7 +27,6 @@ vi solution(vi arr)
     }
     return temp;
 }
-
 int main()
 {
     vi a = solution({ 8, 6,11,1241,4523,234,2134,23,13 });

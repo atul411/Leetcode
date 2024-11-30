@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool solution(int n, int x, int y)
 {
     bool dp[n + 1];
@@ -20,7 +20,6 @@ bool solution(int n, int x, int y)
         {
             dp[i] = true;
         }
-
     }
     return dp[n];
 }

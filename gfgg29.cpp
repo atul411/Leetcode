@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 vi bfs(GraphLinkedListImplementation graph, int src, int k)
 {
     vi dist(graph.v, inf);
@@ -73,7 +73,6 @@ vi solution(GraphLinkedListImplementation graph, vi arr, int k)
     }
     return ans;
 }
-
 int main()
 {
     GraphLinkedListImplementation graph(10);

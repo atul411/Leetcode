@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(int n)
 {
     int dp[n + 1];
@@ -22,7 +22,6 @@ int solution(int n)
     dp[n] = ans;
     return dp[n];
 }
-
 int solutinTricky(int n)
 {
     if (n == 2 or n == 3)
@@ -35,7 +34,6 @@ int solutinTricky(int n)
     }
     return n * res;
 }
-
 int main()
 {
     int n = 55;

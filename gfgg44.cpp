@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 ll solution(int n)
 {
     if (1 % n == 0)
@@ -19,7 +19,6 @@ ll solution(int n)
     }
     return -1;
 }
-
 int main()
 {
     cout<<solution(17);

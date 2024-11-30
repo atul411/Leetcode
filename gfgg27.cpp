@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 void solution(int src, int dst, vi track, vb &visited, GraphLinkedListImplementation graph)
 {
     visited[src] = true;
@@ -22,14 +22,11 @@ void solution(int src, int dst, vi track, vb &visited, GraphLinkedListImplementa
             }
         }
     }
-    
     visited[src] = false;
 }
-
 int main()
 {
     GraphLinkedListImplementation graph(4);
-
     graph.addEdge(0, 3);
     graph.addEdge(0, 1);
     graph.addEdge(0, 2);
@@ -39,5 +36,4 @@ int main()
     vb visited(graph.v, false);
     vi track;
     solution(2,3, track, visited, graph);
-
 }

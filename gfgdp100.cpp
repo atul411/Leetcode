@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(vii arr)
 {
     if (arr[0][0])
@@ -28,7 +28,6 @@ int solution(vii arr)
     }
     return dp[n - 1][m - 1];
 }
-
 int main()
 {
     cout << solution({{0, 0, 0},

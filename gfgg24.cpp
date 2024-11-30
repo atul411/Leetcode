@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int findMaxEdges(vector<int> arr[], int n)
 {
     int color0 = 0, color1 = 0;
@@ -36,7 +36,6 @@ int findMaxEdges(vector<int> arr[], int n)
     }
     return color0 * color1 - n + 1;
 }
-
 int main()
 {
     int n = 5;

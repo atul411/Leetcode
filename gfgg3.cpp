@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
+using namespace std;
 enum Color
 {
     WHITE,
     GRAY,
     BLACK
 };
-
 bool solution(GraphLinkedListImplementation graph, int src, vector<Color> &color)
 {
     color[src] = GRAY;
@@ -19,7 +19,6 @@ bool solution(GraphLinkedListImplementation graph, int src, vector<Color> &color
     color[src] = BLACK;
     return false;
 }
-
 int main()
 {
     GraphLinkedListImplementation graph(4);

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 string solution(string str1, string str2, int i, int j)
 {
     if (i >= str1.length() and j >= str2.length())
@@ -24,7 +24,6 @@ string solution(string str1, string str2, int i, int j)
             return a;
     }
 }
-
 int solutionDp(string str1, string str2)
 {
     int n = str1.size(), m = str2.size();
@@ -54,7 +53,6 @@ int solutionDp(string str1, string str2)
     }
     return dp[n][m];
 }
-
 int main()
 {
     string a = solution("AGGTAB", "GXTXAYB", 0, 0);

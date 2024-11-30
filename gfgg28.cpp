@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int minEdgeBFS(GraphLinkedListImplementation graph, int u, int v)
 {
     if (u == v)
@@ -29,7 +29,6 @@ int minEdgeBFS(GraphLinkedListImplementation graph, int u, int v)
     }
     return minDistant[v];
 }
-
 int solutiondfs(GraphLinkedListImplementation graph, int u, int v, vb &visited, vi track)
 {
     visited[u] = true;

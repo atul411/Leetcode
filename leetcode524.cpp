@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     unordered_map<char, int> umap1;
-
 public:
     string findLongestWord(string s, vector<string> &dictionary)
     {
@@ -24,7 +23,6 @@ public:
             }
         }
     }
-
     bool isSubsequence(string str)
     {
     }

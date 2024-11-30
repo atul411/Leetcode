@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 vi solution(Graph graph, int src)
 {
     vi dist(graph.v);
@@ -26,7 +26,6 @@ vi solution(Graph graph, int src)
     cout<<"it does not have negative cycle"<<endl;
     return dist;
 }
-
 int main()
 {
     int v = 5;

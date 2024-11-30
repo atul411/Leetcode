@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(vi x, vi revenue, int m, int t, int last, int current)
 {
     if (current >= x.size())
@@ -15,7 +15,6 @@ int solution(vi x, vi revenue, int m, int t, int last, int current)
     }
     return max(ans, solution(x, revenue, m, t, last, current + 1));
 }
-
 int main()
 {
     cout<<solution({6, 7, 12, 13, 14}, {5, 6, 5, 3, 1}, 20, 5, -1, 0);

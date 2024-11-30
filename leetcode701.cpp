@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std;
 class Solution
 {
 public:
@@ -11,7 +12,6 @@ public:
         insert(root, val);
         return root;
     }
-
     void insert(TreeNode *root, int val)
     {
         if (root->val < val)

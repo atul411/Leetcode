@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool solution(vi vect, int x, vi a, vi b)
 {
     if (x == vect.size())
@@ -14,7 +14,6 @@ bool solution(vi vect, int x, vi a, vi b)
     auto t2 = solution(vect, x + 1, temp1, temp2);
     return t1 or t2;
 }
-
 bool solution2(vi vect, int n, int sum)
 {
     if (sum == 0)
@@ -28,7 +27,6 @@ bool solution2(vi vect, int n, int sum)
     auto t = solution2(vect, n - 1, sum);
     return sum >= vect[n] ? solution2(vect, n - 1, sum - vect[n]) or t : t;
 }
-
 bool solutionUsingDp(vi arr, int n, int sum)
 {
     int dp[n + 1][sum + 1];
@@ -75,10 +73,8 @@ bool solutionUsingDp(vi arr, int n, int sum)
     }
     return true;
 }
-
 int main()
 {
-    
     int sm = vectorSum(vi({1, 5, 11, 5})) / 2;
     solutionUsingDp({1, 5, 11, 5}, 4, sm);
 }

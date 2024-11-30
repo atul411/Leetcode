@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 string solution(string str1)
 {
     int n = str1.size();
@@ -30,10 +30,8 @@ string solution(string str1)
             }
         }
     }
-
     return str1.substr(start, len);
 }
-
 int main()
 {
     cout << solution("forgeeksskeegfor");

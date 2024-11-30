@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 ll solution(vi primes, int n)
 {
     ll dp[n];
@@ -22,7 +22,6 @@ ll solution(vi primes, int n)
     }
     return dp[n-1];
 }
-
 int main()
 {
     cout<<solution({3, 5, 7, 11, 13}, 9);

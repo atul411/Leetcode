@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 ll dp[10][10][10];
 ll solution(int n, int bcount, int ccount)
 {
@@ -16,7 +16,6 @@ ll solution(int n, int bcount, int ccount)
     dp[n][bcount][ccount] = solution(n - 1, bcount, ccount) + solution(n - 1, bcount - 1, ccount) + solution(n - 1, bcount, ccount - 1);
     return dp[n][bcount][ccount];
 }
-
 int main()
 {
     memset(dp, -1, sizeof(dp));

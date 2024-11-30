@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
 public:
@@ -41,7 +41,6 @@ public:
         return stoi(str.substr(start + 1, str.length() - start - 2)) * sign;
     }
 };
-
 int main()
 {
     Solution s;

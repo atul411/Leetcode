@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool solution(unordered_map<int, set<int>> &graph, int k)
 {
     bool isDegerated = false;
@@ -22,7 +22,6 @@ bool solution(unordered_map<int, set<int>> &graph, int k)
     }
     return isDegerated;
 }
-
 int main()
 {
     int k = 3;

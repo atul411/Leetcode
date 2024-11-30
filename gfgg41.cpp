@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(int x, int y)
 {
     int dp[y + 1];
@@ -21,7 +21,6 @@ int solution(int x, int y)
     }
     return dp[y];
 }
-
 int main()
 {
     cout<<solution(2,5);

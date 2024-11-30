@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(string str1, string str2, int n, int m)
 {
     if (m <= 0)
@@ -16,7 +16,6 @@ int solution(string str1, string str2, int n, int m)
     }
     return ans;
 }
-
 int solutionDp(string str1, string str2)
 {
     int n = str1.size(), m = str2.size();
@@ -42,7 +41,6 @@ int solutionDp(string str1, string str2)
     }
     return dp[n][m];
 }
-
 int main()
 {
     string a = "geeksforgeeks", b = "ge";

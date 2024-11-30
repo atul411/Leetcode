@@ -1,12 +1,11 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(vector<pii> arr, int n)
 {
     if (n <= 0)
         return 0;
     return max(solution(arr, n - 2) + arr[n - 1].first, solution(arr, n - 1) + arr[n - 1].second);
 }
-
 int solutionDp(vector<pii> arr, int n)
 {
     int dp[n + 1];
@@ -18,7 +17,6 @@ int solutionDp(vector<pii> arr, int n)
     }
     return dp[n];
 }
-
 int main()
 {
     int a = solutionDp({{3, 1}, {6, 5}, {8, 4}, {7, 5}, {6, 3}}, 5);

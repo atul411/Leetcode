@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool isklenSame(string str1, string str2, int i, int j, int k)
 {
     bool temp = true;
@@ -21,7 +21,6 @@ int solution(string str1, string str2, int k, int i, int j)
     ans = max({ans, solution(str1, str2, k, i - 1, j), solution(str1, str2, k, i, j - 1)});
     return ans;
 }
-
 int solutionDp(string str1, string str2, int k)
 {
     int n = str1.size(), m = str2.size();
@@ -48,7 +47,6 @@ int solutionDp(string str1, string str2, int k)
     }
     return dp[n][m];
 }
-
 int main()
 {
     string a = "aggayxysdfa", b = "aggajxaaasdfa";

@@ -1,12 +1,10 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int dp[10][10][10][10][10];
-
 int solution(int lastX, int lastY, int currX, int currY, int k, int n, int m)
 {
     if (currX >= n or currY >= m)
         return 0;
-
     if (currX == n - 1 and currY == m - 1)
     {
         if (k >= 0)

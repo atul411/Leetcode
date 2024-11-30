@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     static bool comp(vector<int> &a, vector<int> &b)
@@ -10,7 +10,6 @@ class Solution
         }
         return a[0] > b[0];
     }
-
 public:
     vector<vector<int>> reconstructQueue(vector<vector<int>> &people)
     {

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 const int INF = 1e9;
 bool solution(vvi matrix)
 {
@@ -12,7 +12,6 @@ bool solution(vvi matrix)
             dp[i][j] = matrix[i][j];
         }
     }
-
     for (int k = 0; k < v; k++)
     {
         for (int i = 0; i < v; i++)
@@ -33,7 +32,6 @@ bool solution(vvi matrix)
     }
     return false;
 }
-
 int main()
 {
     vvi matrix = {{0, 1, INF, INF},

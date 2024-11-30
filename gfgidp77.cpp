@@ -1,10 +1,9 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solutiin(int n, int k)
 {
     int dp[n + 1][k + 1];
     fill(dp[0][0], k + 1, n + 1, 0);
-    
     for (int i = 0; i <= n; i++)
     {
         dp[i][1] = 1;
@@ -25,7 +24,6 @@ int solutiin(int n, int k)
     }
     return dp[n][k];
 }
-
 int main()
 {
     cout<<solutiin(3,1);

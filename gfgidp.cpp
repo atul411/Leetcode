@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(vi arr)
 {
     int n = arr.size();
@@ -25,7 +25,6 @@ int solution(vi arr)
     }
     return ans;
 }
-
 int main()
 {
     cout<<solution({1, 5, 4});

@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
-
-
+using namespace std;
 void solution(GraphLinkedListImplementation graph, int start, int end, vector<bool> &visited, int &ans)
 {
     visited[start] = true;
@@ -20,7 +19,6 @@ void solution(GraphLinkedListImplementation graph, int start, int end, vector<bo
     }
     visited[start] = false;
 }
-
 int main()
 {
     GraphLinkedListImplementation g(5);

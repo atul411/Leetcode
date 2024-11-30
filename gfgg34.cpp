@@ -1,10 +1,9 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 struct Triplet
 {
     int dist, x, y;
 };
-
 vvl solution(vvi matrix)
 {
     int n = matrix.size(), m = matrix[0].size();
@@ -80,10 +79,8 @@ vvl solution(vvi matrix)
                 pq.push({arr[front.x - 1][front.y], front.x - 1, front.y});
             }
         }
-
     }
 }
-
 int main()
 {
     vvi matrix;

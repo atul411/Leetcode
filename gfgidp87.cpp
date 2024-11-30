@@ -1,8 +1,7 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 vector<string> arr;
 int dp[10][10];
-
 int solution(vi mat, int i, int j)
 {
     if (i > j)
@@ -23,7 +22,6 @@ int solution(vi mat, int i, int j)
         return (i + mat.size() - j) * mat[j] + solution(mat, i, j - 1);
     }
 }
-
 int main()
 {
     cout<<solution({ 2, 4, 6, 2, 5 }, 0, 4)<<endl;

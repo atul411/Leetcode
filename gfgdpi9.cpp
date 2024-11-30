@@ -1,12 +1,11 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 void solution(Graph graph, int src)
 {
     int v = graph.v;
     int dist[v];
     fill(dist[0], v, inf);
     dist[src] = 0;
-
     for (int i = 0; i < v - 1; i++)
     {
         vector<bool> track(v, false);
@@ -38,7 +37,6 @@ void solution(Graph graph, int src)
         cout<<i<<"\t"<<dist[i]<<endl;
     }
 }
-
 int main()
 {
     Graph graph = Graph(5, 8);

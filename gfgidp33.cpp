@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(string str)
 {
     int n = str.size(), ans = 0;
@@ -33,7 +33,6 @@ int solution(string str)
     }
     return ans;
 }
-
 int main()
 {
     solution("abaab");

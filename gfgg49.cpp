@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool dfs(vvi &matrix, int x, int y)
 {
     int ans = 1;
@@ -33,7 +33,6 @@ bool dfs(vvi &matrix, int x, int y)
         ans += dfs(matrix, x - 1, y - 1);
     }
 }
-
 int main()
 {
 }

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int sollution(vector<int> vect)
 {
     int n = vect.size();
@@ -22,9 +22,7 @@ int sollution(vector<int> vect)
         ans = max({ans, i.first, i.second});
     }
     return ans;
-
 }
-
 int main()
 {
     cout<<sollution({10, 22, 9, 33, 49, 50, 31, 60});
