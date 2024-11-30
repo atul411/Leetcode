@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std;
 int solution(vvi arr)
 {
     int n = arr.size();
@@ -29,7 +30,6 @@ int solution(vvi arr)
     }
     return ans;
 }
-
 int main()
 {
     cout << solution({{4, 2, 1},

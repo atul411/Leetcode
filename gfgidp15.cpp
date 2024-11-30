@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(int m, int n, int x)
 {
     if (n == 0 and x == 0)
@@ -15,7 +15,6 @@ int solution(int m, int n, int x)
     }
     return ans;
 }
-
 int solutionDp(int m, int n, int x)
 {
     int dp[n + 1][x + 1];
@@ -43,7 +42,6 @@ int main()
     cout << solution(6, 3, 8) << endl;
     cout << solution(4, 2, 5) << endl;
     cout << solution(4, 3, 5) << endl;
-
     cout<<"============"<<endl;
     cout << solutionDp(4, 2, 1) << endl;
     cout << solutionDp(2, 2, 3) << endl;

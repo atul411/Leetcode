@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool solution(string str, unordered_map<string, int> dict, int x)
 {
     if (x < 0)
@@ -18,7 +18,6 @@ bool solution(string str, unordered_map<string, int> dict, int x)
     }
     return ans;
 }
-
 bool solutionDp(string str, unordered_map<string, int> dict)
 {
     if(str.empty())

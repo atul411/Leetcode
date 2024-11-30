@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 vector<string> solution(string str1, string str2, int i, int j)
 {
     vector<string> vect;
@@ -17,10 +17,7 @@ vector<string> solution(string str1, string str2, int i, int j)
         }
         return vect;
     }
-
 }
-
 int main()
 {
-    
 }

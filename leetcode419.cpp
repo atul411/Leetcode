@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     void dfs(vector<vector<char>> &board, int i, int j)
@@ -22,7 +22,6 @@ class Solution
             dfs(board, i, j + 1);
         }
     }
-
 public:
     int countBattleships(vector<vector<char>> &board)
     {

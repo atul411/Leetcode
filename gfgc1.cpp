@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool solution(GraphLinkedListImplementation grpah, vb &visited, int src, vb &recStack)
 {
     if (!visited[src])
@@ -19,7 +19,6 @@ bool solution(GraphLinkedListImplementation grpah, vb &visited, int src, vb &rec
     recStack[src] = false;
     return false;
 }
-
 int main()
 {
     GraphLinkedListImplementation graph(4);

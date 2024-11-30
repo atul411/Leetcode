@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 struct Triplet
 {
     int a, b, c;

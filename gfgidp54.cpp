@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 void solution(vi arr)
 {
     int n = arr.size(), sum = accumulate(arr.begin(), arr.end(), 0);
@@ -26,7 +26,6 @@ void solution(vi arr)
         }
     }
 }
-
 int main()
 {
     solution({2, 3, 4, 5, 6});

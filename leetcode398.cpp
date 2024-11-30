@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     unordered_map<int, vector<int>> umap;
-
 public:
     Solution(vector<int> &nums)
     {
@@ -13,7 +12,6 @@ public:
         }
         srand(time(0));
     }
-
     int pick(int target)
     {
         int random = rand() % umap[target].size();

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 vi solution(GraphLinkedListImplementation graph, int src)
 {
     vi level(graph.v);
@@ -23,7 +23,6 @@ vi solution(GraphLinkedListImplementation graph, int src)
     }
     return level;
 }
-
 int main()
 {
     GraphLinkedListImplementation graph(8);

@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     unordered_map<char, int> umap;
-
 public:
     int longestPalindrome(string s)
     {

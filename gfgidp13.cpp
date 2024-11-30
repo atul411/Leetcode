@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(int n, int k)
 {
     if (k == 0 or k == 1)
@@ -19,13 +19,10 @@ int solution(int n, int k)
     }
     return ans + 1;
 }
-
 int solutionDp(int n, int k){
     int dp[n+1][k+1];
     fill(dp[0][0], n+1, k+1, 0);
-    
 }
-
 int main()
 {
     cout << solution(2, 10);

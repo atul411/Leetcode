@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int dp[30][30][30];
-
 int solution(vvi arr, int i, int j, int remain)
 {
     int n = arr.size(), m = arr[0].size();
@@ -20,7 +19,6 @@ int solution(vvi arr, int i, int j, int remain)
     dp[i][j][remain] = solution(arr, i + 1, j, remain - arr[i][j]) + solution(arr, i, j + 1, remain - arr[i][j]);
     return dp[i][j][remain];
 }
-
 int main()
 {
     fill_n(&dp[0][0][0], 30 * 30 * 30, -1);

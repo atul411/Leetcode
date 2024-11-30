@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     int sumRoate(vector<int> mArr)
@@ -12,7 +12,6 @@ class Solution
         }
         return ans;
     }
-
 public:
     int maxRotateFunction(vector<int> &nums)
     {

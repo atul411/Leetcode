@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 void dfs(GraphLinkedListImplementation graph, vb &visited, int start)
 {
     visited[start] = true;
@@ -25,7 +25,6 @@ int solution(GraphLinkedListImplementation graph)
     }
     return ans;
 }
-
 int main()
 {
     GraphLinkedListImplementation graph = GraphLinkedListImplementation(5);

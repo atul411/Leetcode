@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int dp[100][100][100];
-
 int solution(vi arr1, vi arr2, int n, int m, int k)
 {
     if (n <= 0 or m <= 0)
@@ -13,7 +12,6 @@ int solution(vi arr1, vi arr2, int n, int m, int k)
         return k > 0 ? max({solution(arr1, arr2, n - 1, m, k), solution(arr1, arr2, n, m - 1, k), 1 + solution(arr1, arr2, n - 1, m - 1, k - 1)}) : max(solution(arr1, arr2, n - 1, m, k), solution(arr1, arr2, n, m - 1, k));
     }
 }
-
 int solutiondp(vi arr1, vi arr2, int n, int m, int k)
 {
     if (n <= 0 or m <= 0)
@@ -38,7 +36,6 @@ int solutiondp(vi arr1, vi arr2, int n, int m, int k)
     }
     return dp[n][m][k];
 }
-
 int main()
 {
     fill_n(&dp[0][0][0], 100*100*100, -1);

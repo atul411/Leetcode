@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
 public:
@@ -13,7 +13,6 @@ public:
                 count++;
             }
         }
-
         if (count == n or count == 0)
         {
             return true;

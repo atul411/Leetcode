@@ -1,10 +1,9 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 double distance(double x1, double y1, double x2, double y2)
 {
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
-
 bool isSafe(vi x, vi y, double r, int x1, int y1)
 {
     for (int i = 0; i < x.size(); i++)
@@ -16,7 +15,6 @@ bool isSafe(vi x, vi y, double r, int x1, int y1)
     }
     return true;
 }
-
 bool bfs(int x, int y, int n, int m, int r, vi X, vi Y, vvb &helper)
 {
     if (x == n and y == m)
@@ -41,7 +39,6 @@ bool bfs(int x, int y, int n, int m, int r, vi X, vi Y, vvb &helper)
     }
     return ans;
 }
-
 bool solution(int n, int m, vvb &helper, vi x, vi y, double r)
 {
     bool first = isSafe(x, y, r, 1, 1);
@@ -51,7 +48,6 @@ bool solution(int n, int m, vvb &helper, vi x, vi y, double r)
     }
     return bfs(1, 1, n, m, r, x, y, helper);
 }
-
 int main()
 {
     int n = 5, m = 5, r = 1;

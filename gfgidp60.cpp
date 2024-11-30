@@ -1,15 +1,13 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 struct Triplet
 {
     int startTime, endTime, profit;
 };
-
 bool comprator(Triplet a, Triplet b)
 {
     return a.endTime < b.endTime;
 }
-
 int findLatestNonconflicting(vector<Triplet> arr, int n)
 {
     for (int j = n - 1; j >= 0; j--)
@@ -19,7 +17,6 @@ int findLatestNonconflicting(vector<Triplet> arr, int n)
     }
     return -1;
 }
-
 int solution(vector<Triplet> arr, int n)
 {
     if (n < 0)
@@ -30,30 +27,21 @@ int solution(vector<Triplet> arr, int n)
     int i = findLatestNonconflicting(arr, n - 1);
     return max(x, arr[n].profit + solution(arr, i));
 }
-
 int solutionDp(vector<Triplet> arr, int n)
 {
-
     int* table = new int[n];
     table[0] = arr[0].profit;
- 
     for (int i = 1; i < n; i++) {
-        
         int inclProf = arr[i].profit;
         int l = findLatestNonconflicting(arr, i);
         if (l != -1)
             inclProf += table[l];
- 
-        
         table[i] = max(inclProf, table[i - 1]);
     }
- 
     int result = table[n - 1];
     delete[] table;
- 
     return result;
 }
-
 int main()
 {
     vector<Triplet> arr = {{3, 10, 20}, {1, 2, 50}, {6, 19, 100}, {2, 100, 200}};

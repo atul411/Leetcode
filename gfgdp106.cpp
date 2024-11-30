@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(int n, int m){
     vi dp(n + 1, 0);
     dp[0] = 1;
@@ -12,8 +12,6 @@ int solution(int n, int m){
     }
     return dp[n];
 }
-
-
 int main(){
     cout<<solution(3,1);
 }

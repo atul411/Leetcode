@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 ll dp[50][50];
 ll solution(ll n, ll sum)
 {
@@ -21,7 +21,6 @@ ll solution(ll n, ll sum)
     dp[n][sum] = ans;
     return ans;
 }
-
 int main()
 {
     for (int i = 0; i < 50; i++)

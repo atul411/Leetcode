@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 void bfs(GraphLinkedListImplementation &parent, GraphLinkedListImplementation &transpose, int start, vb &visitd);
-
 void solution(GraphLinkedListImplementation parent, GraphLinkedListImplementation &transpose)
 {
     vb visited(parent.v);
@@ -13,7 +12,6 @@ void solution(GraphLinkedListImplementation parent, GraphLinkedListImplementatio
         }
     }
 }
-
 void bfs(GraphLinkedListImplementation &parent, GraphLinkedListImplementation &transpose, int start, vb &visitd)
 {
     queue<int> que;
@@ -30,7 +28,6 @@ void bfs(GraphLinkedListImplementation &parent, GraphLinkedListImplementation &t
             {
                 que.push(node);
             }
-            
             visitd[node] = true;
         }
     }
@@ -47,7 +44,6 @@ void printgraph(GraphLinkedListImplementation graph)
         cout << endl;
     }
 }
-
 int main()
 {
     GraphLinkedListImplementation parent(5), transpose(5);

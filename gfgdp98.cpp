@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(vi arr)
 {
     int n = arr.size();
@@ -18,7 +18,6 @@ int solution(vi arr)
     }
     return *max_element(dp, dp + n);
 }
-
 int cal(int a, int b){
     return a>b;
 }

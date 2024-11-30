@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(int n, int k, int m)
 {
     if (n == 0)
@@ -22,7 +22,6 @@ int solution(int n, int k, int m)
     }
     return ans;
 }
-
 int main()
 {
     int a = solution(3,1,3);

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     int n, m;
@@ -7,7 +7,6 @@ class Solution
     {
         return i < n and i >= 0 and j < m and j >= 0;
     }
-
 public:
     vector<vector<int>> pacificAtlantic(vector<vector<int>> &heights)
     {
@@ -84,7 +83,6 @@ public:
                 que.push({front.first, front.second - 1});
             }
         }
-
         vector<vector<int>> ans;
         for (int i = 0; i < n; i++)
         {
@@ -99,8 +97,5 @@ public:
         return ans;
     }
 };
-
-
 int main(){
-    
 }

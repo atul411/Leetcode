@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(string str)
 {
     int invalidopen = 0, invaliedclosed = 0;
@@ -23,7 +23,6 @@ int solution(string str)
     }
     return str.size() - invalidopen - invaliedclosed;
 }
-
 int main()
 {
     cout<<solution("()(((((()");

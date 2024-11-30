@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 vi solution(vi arr)
 {
     int n = arr.size();
@@ -27,16 +27,13 @@ vi solution(vi arr)
             index = i;
         }
     }
-
     return dp[index];
 }
-
 vi solutionDp(vi arr)
 {
     unordered_map<int, int> umap;
     int n = arr.size(), dp[n], index, maxLength = -1;
     fill(dp[0], n, 0);
-
     for (int i = 0; i < n; i++)
     {
         if (umap.count(arr[i] - 1))
@@ -62,9 +59,6 @@ vi solutionDp(vi arr)
     }
     return temp;
 }
-
-
-
 int main()
 {
    vi a = {1,5,2,3,4,1, -1, 7, -11, 5};
@@ -72,4 +66,3 @@ int main()
    auto b = lower_bound(a.begin(), a.end(), 5);
    cout<<(b-a.begin());
 }
-

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 void bfs(GraphLinkedListImplementation graph, int level, int start)
 {
     queue<int> q1, q2;
@@ -8,14 +8,12 @@ void bfs(GraphLinkedListImplementation graph, int level, int start)
     visted[start] = true;
     while ((q1.size() or q2.size()) and level)
     {
-        
         if (q1.size())
         {
             while (!q1.empty())
             {
                 int temp = q1.front();
                 q1.pop();
-                
                 for (auto i : graph.arr[temp])
                 {
                     if (visted[i] == false)
@@ -32,7 +30,6 @@ void bfs(GraphLinkedListImplementation graph, int level, int start)
             {
                 int temp = q2.front();
                 q2.pop();
-                
                 for (auto i : graph.arr[temp])
                 {
                     if (visted[i] == false)
@@ -46,7 +43,6 @@ void bfs(GraphLinkedListImplementation graph, int level, int start)
         cout << endl;
         level--;
     }
-
     while (!q2.empty())
     {
         cout << q2.front() << "\t";

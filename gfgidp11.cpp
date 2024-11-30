@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solutionDp(vi val, vi weight, int W, int n)
 {
     int dp[W + 1][n + 1];
@@ -12,13 +12,10 @@ int solutionDp(vi val, vi weight, int W, int n)
     {
         for (int j = 1; j <= n; j++)
         {
-
             dp[i][j] = i >= weight[j - 1] ? max(val[j - 1] + dp[i - weight[j - 1]][j - 1], dp[i][j - 1]) : dp[i][j - 1];
         }
     }
     return dp[W][n];
 }
-
 int main(){
-
 }

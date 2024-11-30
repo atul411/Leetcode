@@ -1,10 +1,9 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool inSide(int x, int y, int N)
 {
     return x >= 0 and x < N and y < N and y >= 0;
 }
-
 int minStepToReachTarget(int knightPos[], int targetPos[], int N)
 {
     queue<pii> que;
@@ -34,12 +33,10 @@ int minStepToReachTarget(int knightPos[], int targetPos[], int N)
     }
     return dp[targetPos[0] - 1][targetPos[1] - 1];
 }
-
 int main()
 {
     int N = 30;
     int knightPos[] = {1, 1};
     int targetPos[] = {30, 30};
-
     cout << minStepToReachTarget(knightPos, targetPos, N);
 }

@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std;
 const int n = 100;
 int solution(string str)
 {
@@ -39,9 +40,7 @@ int solution(string str)
     }
     return ans;
 }
-
 int dp[n][n];
-
 int longestPalindromicsubsequence(string str, int i, int j)
 {
     if (i == j)
@@ -62,7 +61,6 @@ int longestPalindromicsubsequence(string str, int i, int j)
         dp[i][j] = max(longestPalindromicsubsequence(str, i + 1, j), longestPalindromicsubsequence(str, i, j - 1));
     return dp[i][j];
 }
-
 int main()
 {
     fill(dp[0][0], 100, 100, -1);

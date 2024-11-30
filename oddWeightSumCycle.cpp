@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool isCyclic(GraphLinkedListImplementation graph, int src)
 {
     int v = graph.v;
@@ -27,7 +27,6 @@ bool isCyclic(GraphLinkedListImplementation graph, int src)
     }
     return true;
 }
-
 int main()
 {
     GraphLinkedListImplementation g1(4);

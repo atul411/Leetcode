@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(vi arr, int v)
 {
     int n = arr.size();
@@ -12,7 +12,6 @@ int solution(vi arr, int v)
                 dp[i] = dp[i - arr[j]] + 1;
     return dp[v];
 }
-
 int main()
 {
     cout<<solution( {9, 6, 5, 1}, 11);

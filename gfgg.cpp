@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int dfs(GraphLinkedListImplementation graph, int src)
 {
     int temp = 0;
@@ -9,7 +9,6 @@ int dfs(GraphLinkedListImplementation graph, int src)
     }
     return temp+1;
 }
-
 int solution(vi parent)
 {
     int v = parent.size();
@@ -18,18 +17,8 @@ int solution(vi parent)
     {
         grpah.addEdge(parent[i], i);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     return dfs(grpah, 0);
 }
-
 int main()
 {
     cout << solution({-1, 0, 1, 2, 3})-1;

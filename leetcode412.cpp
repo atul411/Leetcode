@@ -1,22 +1,19 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     bool buzz(int i)
     {
         return i % 5 == 0;
     }
-
     bool fizz(int i)
     {
         return i % 3 == 0;
     }
-
     bool fizbuzz(int i)
     {
         return fizz(i) and buzz(i);
     }
-
 public:
     vector<string> fizzBuzz(int n)
     {

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 vector<pii> ans;
 void helper_function(vvi &arr, int x, int y, vvb &temp)
 {
@@ -44,7 +44,6 @@ int solution(vvi &arr, vvb &temp)
     }
     return 0;
 }
-
 int main()
 {
     vvi arr = {{3, 3}, {1, 1}};

@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std;
 
 int solution(vi arr, int i, int j)
 {
@@ -6,7 +7,6 @@ int solution(vi arr, int i, int j)
     {
         return 0;
     };
-
     int a = solution(arr, i + 1, j);
     int b = solution(arr, i, j - 1);
     int x = i + arr.size() - 1 - j;
@@ -24,7 +24,6 @@ int solutionUsingDp(vi arr, int i, int j)
     int x = i + arr.size() - 1 - j;
     return max((x + 1) * arr[i] + a, (x + 1) * arr[j] + b);
 }
-
 int main()
 {
     dp = vii(10, vi(10, 0));

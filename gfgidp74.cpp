@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(int n)
 {
     int dp[n + 1];
@@ -11,21 +11,17 @@ int solution(int n)
     }
     return dp[n];
 }
-
 int countStrings(int n)
 {
     int a = 1, b = 1;
     for (int i = 1; i < n; i++)
     {
-        
-        
         int temp = a + b;
         b = a;
         a = temp;
     }
     return a + b;
 }
-
 int main()
 {
     for (int i = 0; i < 5; i++)

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool isSetepping(int n)
 {
     if (n < 10)
@@ -16,7 +16,6 @@ bool isSetepping(int n)
     }
     return n == 0;
 }
-
 vi solutionBfs(int n, int m)
 {
     vi ans;
@@ -27,7 +26,6 @@ vi solutionBfs(int n, int m)
     }
     while (que.size())
     {
-
         int front = que.front();
         que.pop();
         if (front >= n and front <= m)
@@ -44,7 +42,6 @@ vi solutionBfs(int n, int m)
     }
     return ans;
 }
-
 int main()
 {
     vi ans = solutionBfs(0, 21);

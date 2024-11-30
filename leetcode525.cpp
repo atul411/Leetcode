@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     using pii = pair<int, int>;
-
 public:
     int findMaxLength(vector<int> &nums)
     {

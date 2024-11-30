@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int solution(vi arr)
 {
     int n = arr.size(), minSum = maxInteger, sumEndingHere = 0;
@@ -17,8 +17,6 @@ int solution(vi arr)
     }
     return minSum;
 }
-
-
 int main()
 {
     int a = solution({3, -4, 2, -3, -1, 7, -5});

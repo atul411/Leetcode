@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 double solution(int n, float p)
 {
     vd arr(n + 1, 0);
@@ -17,7 +17,6 @@ double solution(int n, float p)
     }
     return arr[n];
 }
-
 int main()
 {
     cout<<solution(5, 0.2);

@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 void solution(GraphLinkedListImplementation graph, int src, vb &visited, stack<int> &st)
 {
     visited[src] = true;
@@ -12,7 +12,6 @@ void solution(GraphLinkedListImplementation graph, int src, vb &visited, stack<i
     }
     st.push(src);
 }
-
 int main()
 {
     stack<int> ans = solution(graph, 0, visited, stack<)

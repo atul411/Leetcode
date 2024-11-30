@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class node
 {
 public:
@@ -7,7 +7,6 @@ public:
     int liss;
     node *left, *right;
 };
-
 node *newNode(int data)
 {
     node *temp = new node();
@@ -16,7 +15,6 @@ node *newNode(int data)
     temp->left = temp->right = NULL;
     return temp;
 }
-
 int solution(node *root)
 {
     if (root == nullptr)
@@ -36,7 +34,6 @@ int solution(node *root)
     }
     return max(1 + temp, solution(root->left) + solution(root->right));
 }
-
 int main()
 {
     node *root = newNode(20);

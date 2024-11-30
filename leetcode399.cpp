@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 class Solution
 {
     unordered_map<pair<string, string>, double> umap;
-
 public:
     vector<double> calcEquation(vector<vector<string>> &equations, vector<double> &values, vector<vector<string>> &queries)
     {
