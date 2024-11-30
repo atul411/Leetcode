@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 bool dfs(vector<int> &matchsticks, vector<int> &kow, int index, int target)

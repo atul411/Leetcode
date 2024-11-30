@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 int solution(string str1, string str2, int n, int m)
 {

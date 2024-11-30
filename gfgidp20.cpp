@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 int solution(vi x, vi revenue, int m, int t, int last, int current)
 {

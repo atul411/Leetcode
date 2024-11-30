@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 vector<string> arr;
 int dp[10][10];

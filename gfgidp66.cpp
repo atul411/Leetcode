@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 bool solution(int n, int x, int y)
 {

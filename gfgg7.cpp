@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 const int INF = 1e9;
 bool solution(vvi matrix)

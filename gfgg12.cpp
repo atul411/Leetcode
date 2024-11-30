@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 vector<pii> ans;
 void helper_function(vvi &arr, int x, int y, vvb &temp)

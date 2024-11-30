@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 bool solution(vi vect, int x, vi a, vi b)
 {

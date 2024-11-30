@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 bool solution(string str, unordered_map<string, int> dict, int x)
 {

@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 ll dp[50][50];
 ll solution(ll n, ll sum)

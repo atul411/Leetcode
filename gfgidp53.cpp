@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 int solution(vvi arr)
 {
     int n = arr.size();

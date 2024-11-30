@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 void dfs(int i, vector<bool> &visited, vi &temp, GraphLinkedListImplementation graph)
 {

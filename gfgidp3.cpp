@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 
 int zigzag(int n, int k)
