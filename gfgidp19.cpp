@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 void bfs(GraphLinkedListImplementation &parent, GraphLinkedListImplementation &transpose, int start, vb &visitd);
 

@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 const int n = 100;
 int solution(string str)
 {

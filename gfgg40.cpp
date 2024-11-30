@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 bool inSide(int x, int y, int N)
 {

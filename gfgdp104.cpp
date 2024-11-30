@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 unordered_map<int, int> umap;
 int f(int x)

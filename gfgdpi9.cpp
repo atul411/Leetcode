@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 void solution(Graph graph, int src)
 {

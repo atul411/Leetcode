@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 ll dp[10][10][10];
 ll solution(int n, int bcount, int ccount)

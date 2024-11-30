@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-#define inf INT_MAX
 int solution(vector<int> arr, int w)
 {
     int n = arr.size();

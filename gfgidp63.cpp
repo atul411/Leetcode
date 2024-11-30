@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 int dp[30][30][30];
 

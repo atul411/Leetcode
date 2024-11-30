@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-#define ll long long
 int solution(vector<vector<ll>> mat)
 {
     int n = mat.size(), m = mat[0].size();

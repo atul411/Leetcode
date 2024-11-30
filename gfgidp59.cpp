@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 int dp[100][100][100];
 

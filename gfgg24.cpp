@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 int findMaxEdges(vector<int> arr[], int n)
 {

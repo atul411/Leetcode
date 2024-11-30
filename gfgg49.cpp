@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 bool dfs(vvi &matrix, int x, int y)
 {

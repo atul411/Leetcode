@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-#define pii pair<int, int>
 
 void solution(vector<pii> arr)
 {

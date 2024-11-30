@@ -1,4 +1,4 @@
-#include "library.h"
+#include<bits/stdc++.h>
 
 vi solution(vi arr)
 {
