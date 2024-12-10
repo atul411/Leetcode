@@ -6,6 +6,7 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using vvl = vector<vector<ll>>;
 
+
 string upper_case(string str) {
     for (auto &ch : str) {
         ch = toupper(ch);
